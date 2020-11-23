@@ -1,0 +1,52 @@
+.graph-container{
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  resize: both;
+  overflow: hidden;
+  min-width: 400px;
+  min-height: 200px;
+  max-width: 700px;
+  max-height: 400px;
+  position: absolute;
+  text-align: center;
+  display: inline-flex;
+  background-color: #e9e7e7;
+  transform: translate(0px, 5px);
+}
+
+.graph-body{
+  width: 90%;
+  height: 90%;
+}
+
+.graph-move, .graph-trash{
+  margin: 5px;
+  width: 90%;
+  min-width: 20px ;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+.graph-move :hover{
+  cursor: pointer;
+  color: orange;
+}
+
+.graph-trash :hover{
+  cursor: pointer;
+  color: red;
+}
+
+.graph-title{
+  font-size: medium;
+  /* width: 90%; */
+}
+
+.graph-menu{
+  width: 10%;
+  /* min-width: 50px; */
+  text-align: center;
+  /* border-left: 1px solid grey; */
+}

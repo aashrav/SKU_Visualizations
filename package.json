@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "feather-icons-react": "^0.4.1",
+    "plotly.js": "^1.57.1",
+    "plotly.js-basic-dist": "^1.57.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
+    "react-plotly.js": "^2.5.0",
     "react-scripts": "4.0.0",
+    "recharts": "^1.8.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -34,5 +42,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

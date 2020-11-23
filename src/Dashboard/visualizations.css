@@ -1,0 +1,28 @@
+.select-column{
+  width: 10rem;
+  margin: 1rem !important;
+}
+
+.add-graph{
+  background-color: lightgreen !important;
+  /* line-height: 30px !important; */
+  vertical-align: center !important;
+
+
+}
+
+.graph-create{
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.add-graph:hover{
+  background-color: rgb(189, 231, 189) !important;
+}
+
+.draggable-boundary{
+  height: calc(100% - 10rem);
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  position: relative
+}
