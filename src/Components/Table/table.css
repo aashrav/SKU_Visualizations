@@ -1,16 +1,18 @@
 .filter {
   height: 5%;
-  margin-right: 20px !important;
+  margin-right: 3rem !important;
 }
 
 .table{
+  /* margin-top: ; */
   height: 100%;
   /* outline: transparent;
   border: transparent; */
 }
 
 .table-data{
-  height: 90%;
+  margin-top: 2rem;
+  height: 89.5%;
   /* min-height: 400px; */
   display: flex;
 }

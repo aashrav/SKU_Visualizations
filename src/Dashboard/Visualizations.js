@@ -89,29 +89,8 @@ class Visualizations extends Component {
     }else{
       this.lineGraphHandler(this.state.xColumn, this.state.yColumn)
     }
-    // const graph = {data: data, xAxis: this.state.xColumn, yAxis:this.state.yColumn, type: this.state.graphType, key: this.key}
-    // this.key += 1
-    // this.setGraphs(currGraphs => [...currGraphs, graph]);
-    // this.scatterPlotHandler.then((res) => {
-    //   // console.log(this.state.xData)
-    //   this.state.xData.forEach((x, index) => {
-    //     graphData.push({'x':x, 'y': this.state.yData[index]})
-    //   });
-    //   // let graphs = [...this.graphs];
-    //   let graph = {
-    //     data: graphData,
-    //     xAxis: this.state.xColumn,
-    //     yAxis: this.state.yColumn,
-    //     type: this.state.graphType,
-    //     key: this.key
-    //   }
-    //   // graphs.push(graph);
-    //   this.key += 1
-    //   this.setGraphs(currGraphs => [...currGraphs, graph]);
-    //   // console.log(this.graphs);
-    // })
   }
-  
+
   render() {
     return (
       <React.Fragment>
@@ -137,13 +116,6 @@ class Visualizations extends Component {
           
           <Button className = 'add-graph' onClick = {this.addGraph}>Add Graph</Button>
         </div>
-        {/* <div className = 'draggable-boundary'>
-          {this.graphs.map((graph) => {
-            return (graph.type === 'scatter') ? 
-              <ScatterPlot key = {graph.key} data = {graph.data} yAxis = {graph.yAxis} xAxis = {graph.xAxis} delete = {() => this.deleteHandler(graph.key)}></ScatterPlot> 
-              : <LineGraph key = {graph.key} data = {graph.data} yAxis = {graph.yAxis} xAxis = {graph.xAxis} delete = {() => this.deleteHandler(graph.key)}> </LineGraph>
-          })}
-        </div> */}
       </React.Fragment>
     );
   }
