@@ -1,0 +1,16 @@
+.filter {
+  height: 5%;
+  margin-right: 20px !important;
+}
+
+.table{
+  height: 100%;
+  /* outline: transparent;
+  border: transparent; */
+}
+
+.table-data{
+  height: 90%;
+  /* min-height: 400px; */
+  display: flex;
+}
