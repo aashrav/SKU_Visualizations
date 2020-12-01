@@ -8,6 +8,7 @@ import mongoengine
 from flask_cors import CORS
 from .graphFunctions import *
 from flask import Flask
+
 @app.route('/')
 def index():
     # print(User.objects)
@@ -189,17 +190,6 @@ def getLineGraphData():
   actual = time_series_data_outputs(df, columnX, columnY)
 
   return jsonify(actual + prediction)
-
-
-
-
-
-
-
-
-
-
-
 
 @app.route('/getTable', methods=['POST'])
 def getTable():

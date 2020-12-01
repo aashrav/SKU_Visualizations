@@ -2,6 +2,7 @@
 from flask import Flask
 from flask_mongoengine import MongoEngine
 from flask_cors import CORS
+# from app import routing
 
 
 db = MongoEngine()
@@ -14,7 +15,6 @@ cors = CORS(app)
 db.init_app(app)
     
 
-from app import routing
 
 if __name__ == "__main__":
     app.run(debug=True)
