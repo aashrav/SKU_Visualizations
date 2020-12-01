@@ -23,7 +23,7 @@
   },
   "scripts": {
     "run-frontend": "react-scripts start",
-    "start": "python api/run.py",
+    "start": "pip install -r requirements.txt && python api/run.py",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
