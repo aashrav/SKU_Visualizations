@@ -12,6 +12,9 @@ const ScatterPlot = (props) => {
   return (
     <Draggable bounds = 'parent' handle =  '.graph-move' >
       <div className = 'graph-container'>
+        <div className = 'graph-y-container'>
+          <p className = 'y-axis'>{props.yAxis}</p>
+        </div>
         <div className = 'graph-body'>
           <p className = 'graph-title'>Correlation of {props.yAxis} and {props.xAxis}</p>
           <ResponsiveContainer  width="100%" height="80%">
@@ -27,16 +30,18 @@ const ScatterPlot = (props) => {
                 // label={{ value: props.xAxis, position: "insideBottom", dy: 10}}
               />
               <YAxis 
-                // label={<CustomizedLabelB/>}
+                // label={{ value: props.yAxis, position: "left", angle: -90,   dy: -10}}
               >
               </YAxis>
               {/* <Tooltip /> */}
               <Tooltip cursor={{ strokeDasharray: '1 1' }} />
-              <Scatter name = 'Actual' dataKey="y" fill="#8884d8" dot={false}/>
+              <Scatter name = 'Actual' dataKey="y" fill="#82ca9d" dot={false}/>
               <Line name = 'Prediction' dataKey="predictionY" dot={false} stroke="red" />
 
             </ComposedChart>
           </ResponsiveContainer>
+          <p className = 'x-axis'>{props.xAxis}</p>
+
         </div>
         <div className = 'graph-menu'>
           <button className = 'graph-move'>
@@ -45,6 +50,8 @@ const ScatterPlot = (props) => {
           <button className = 'graph-trash'  onClick = {props.delete}>
             <FeatherIcon  icon = 'trash'></FeatherIcon>
           </button>
+          <p className = 'graph-actual'>Actual</p>
+          <p className = 'graph-prediction'>Prediction</p>
         </div>
       </div>
     </Draggable>
