@@ -13,7 +13,7 @@ cors = CORS(app)
 db.init_app(app)
     
 
-from app import routing
+from main import routing
 
 
 

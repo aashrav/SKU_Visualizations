@@ -1,4 +1,4 @@
-from app import db
+from main import db
 from bson.objectid import ObjectId
 
 class User(db.Document):

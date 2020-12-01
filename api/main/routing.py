@@ -1,4 +1,4 @@
-from app import app
+from main import app
 from flask import render_template, request, redirect, make_response, jsonify, abort
 from .models import User, Corporate, File, MasterFile
 from bson import ObjectId
@@ -8,7 +8,6 @@ import mongoengine
 from flask_cors import CORS
 from .graphFunctions import *
 from flask import Flask
-
 @app.route('/')
 def index():
     # print(User.objects)
