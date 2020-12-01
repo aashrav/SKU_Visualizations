@@ -4,6 +4,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, XAxis, YAxis, Lege
 import FeatherIcon from 'feather-icons-react';
 import Draggable from 'react-draggable';
 import '../graph.css';
+
 const LineGraph = (props) => {
   return(
     <Draggable bounds = 'parent' handle =  '.graph-move'>
@@ -43,7 +44,7 @@ const LineGraph = (props) => {
               {/* <p>{props.yAxis}</p> */}
               <Tooltip />
 
-              {/* <Tooltip cursor={{ strokeDasharray: '1 1' }} /> */}
+              <Tooltip cursor={{ strokeDasharray: '1 1' }} />
               <Line  dataKey="y" stroke="#82ca9d" />
               <Line  dataKey="prediction" stroke="red" />
 
