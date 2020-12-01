@@ -4,10 +4,10 @@
   height: 300px;
   resize: both;
   overflow: hidden;
-  min-width: 400px;
-  min-height: 200px;
-  max-width: 700px;
-  max-height: 400px;
+  min-width: 500px;
+  min-height: 300px;
+  max-width: 800px;
+  max-height: 500px;
   position: absolute;
   text-align: center;
   display: inline-flex;
@@ -16,8 +16,9 @@
 }
 
 .graph-body{
-  width: 90%;
+  width: 75%;
   height: 90%;
+  text-align: -webkit-center;
 }
 
 .graph-move, .graph-trash{
@@ -40,13 +41,67 @@
 }
 
 .graph-title{
+  font-family: "Roboto";
+  font-weight: 500;
+  /* display: inline; */
   font-size: medium;
+  overflow: hidden;
+  /* word-wrap: none; */
+  /* line-break: strict; */
+  /* word-break: break-all; */
+  /* word-wrap: none; */
+  width: 75%;
+  /* max-width:   */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  /* ellip */
+
+  /* max-width: 360px; */
   /* width: 90%; */
 }
 
 .graph-menu{
-  width: 10%;
+  width: 20%;
   /* min-width: 50px; */
   text-align: center;
   /* border-left: 1px solid grey; */
+}
+
+.y-label{
+  margin: 10px;
+  color: red;
+  background-color: red;
+}
+
+.x-axis{
+  color: grey;
+  font-family: "Roboto";
+
+  margin-left: 3rem;
+  margin-top: 0;
+}
+
+.graph-actual{
+  text-decoration: overline;
+  color: #82ca9d
+}
+
+.graph-prediction{
+  text-decoration: overline;
+  color: red
+}
+
+.graph-y-container{
+  width: 5%;
+  height: 62%;
+  margin-top: 55px;
+} 
+
+.y-axis{
+  color: grey;
+  font-family: "Roboto";
+  transform: rotate(-90deg);
+  position: relative;
+  top: 50%;
 }
