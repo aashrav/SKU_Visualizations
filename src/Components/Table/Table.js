@@ -20,17 +20,6 @@ function Table(props) {
   }, []);
 
   const getData = () => {
-    // axios.post('/getColumns', {file: props.file})
-    //   .then((res) => {
-    //     columns = []
-    //     res.data.forEach(column => {
-    //       columns.add
-    //     });
-    //     console.log(res);
-    //   })
-    //   .catch((error) =>{
-    //     console.log(error)
-    //   })
     fetch('/getTable', {
       method : 'POST',
       headers : {'Content-Type' : 'application/json'},
