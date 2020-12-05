@@ -1,5 +1,6 @@
+  import sys
 
 if __name__ == "__main__":
-  import sys
-  sys.path.insert(0, 'api') 
-  import run
+  sys.path.insert(0, 'api')
+  from app import app
+  app.run(debug=True)
